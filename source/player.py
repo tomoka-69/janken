@@ -7,4 +7,4 @@ def player_pon():
        print("不正な入力です。もう一度入力してください。")
        player_hand = input("グー、チョキ、パーのいずれかを入力してください：")
 
-   return hands_dic[str(player_hand)]
+   return hands_dic[player_hand]

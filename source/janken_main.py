@@ -1,6 +1,6 @@
-import player
-import computer
-import janken_judge
+import source.player
+import source.computer
+import source.janken_judge
 
 def main():
    player_win = 0
@@ -12,9 +12,9 @@ def main():
    round = 1
    while round <= 3:
        print(f"-----ラウンド {round} -----")
-       computer_hand = computer.computer_pon()
-       player_hand = player.player_pon()
-       result = janken_judge.judge(computer_hand,player_hand)
+       computer_hand = source.computer.computer_pon()
+       player_hand = source.player.player_pon()
+       result = source.janken_judge.judge(computer_hand,player_hand)
 
        print(f"あなたの手:{player_hand}")
        print(f"コンピューターの手:{player_hand}")
